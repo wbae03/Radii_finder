@@ -1,4 +1,4 @@
-('C:\\Users\\wbae0\\Desktop\\GitHub\\Droplet-Detector\\Radii_finder\\build\\radii_finder\\PYZ-00.pyz',
+('C:\\Users\\wbae0\\Desktop\\GitHub\\Radii_finder\\build\\radii_finder\\PYZ-00.pyz',
  [('IPython',
    'C:\\Users\\wbae0\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\IPython\\__init__.py',
    'PYMODULE'),

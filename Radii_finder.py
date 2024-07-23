@@ -148,8 +148,8 @@ def on_mouse_radius(event, x1, y1, flags, param): # although flags and param are
         
         finished_drawing = True
         
-        print(f'\n{RED}[PROGRAM] > {END}End Mouse Position: {YELLOW}[' + str(x) + ',' + str(y) + f']{END}')
-        ebox = [x, y]
+        print(f'\n{RED}[PROGRAM] > {END}End Mouse Position: {YELLOW}[' + str(x1) + ',' + str(y1) + f']{END}')
+        ebox = [x1, y1]
         line_coords.append(ebox)
         drawing = False
         # Draw the final line on the main image
@@ -163,7 +163,8 @@ def on_mouse_radius(event, x1, y1, flags, param): # although flags and param are
 
         actual_radius = round(float(calib_pixel_length) / float(calibration_ratio), 2)
         print(f'\n{GREEN}-------------------------------------------------------------------------------------{END}')
-        print(f'\n{RED}[PROGRAM] > {END}{GREEN}Radius is: [', actual_radius, f']{END}.')
+        print(f'\n{RED}[PROGRAM] > {END}{GREEN}Total length is: [', actual_radius, f']{END}.')
+        print(f'\n{RED}[PROGRAM] > {END}{GREEN}Radius is: [', actual_radius/2, f']{END}.')
         cv2.destroyWindow('Radius Window')
 
 
