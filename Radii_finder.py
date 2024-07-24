@@ -84,7 +84,7 @@ def on_mouse_calibration(event, x, y, flags, param): # although flags and param 
         # use pythagorean theorem to find length of line
         x_length = abs(sbox[0] - ebox[0])
         y_length = abs(sbox[1] - ebox[1])
-        calib_pixel_length = round(math.sqrt(x_length**2 + y_length*2), 2)
+        calib_pixel_length = round(math.sqrt(x_length**2 + y_length**2), 2)
         print(f'\n{RED}[PROGRAM] > {END}Calibration pixel length: {YELLOW}[', calib_pixel_length, f']{END}')
 
 
@@ -158,7 +158,7 @@ def on_mouse_radius(event, x1, y1, flags, param): # although flags and param are
         # use pythagorean theorem to find length of line
         x_length = abs(sbox[0] - ebox[0])
         y_length = abs(sbox[1] - ebox[1])
-        calib_pixel_length = round(math.sqrt(x_length**2 + y_length*2), 2)
+        calib_pixel_length = round(math.sqrt(x_length**2 + y_length**2), 2)
         print(f'\n{RED}[PROGRAM] > {END}Calibration pixel length: {YELLOW}[', calib_pixel_length, f']{END}')
 
         actual_radius = round(float(calib_pixel_length) / float(calibration_ratio), 2)

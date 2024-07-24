@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['radii_finder.py'],
+    ['Radii_finder.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -21,7 +21,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='radii_finder',
+    name='Radii_finder',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -40,5 +40,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='radii_finder',
+    name='Radii_finder',
 )
